@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your_repo Traffic data</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>GitHub Traffic Data for Your_repo</h2>
+    <p>This application displays the traffic data of Your_repo including total page views and unique visitors. </p>
+    <div id="total_views"></div>
+    <div id="unique_visitors"></div>
+    <script>
+        var graphs = {{ graphJSON | safe }};
+        if(graphs) {
+            Plotly.newPlot('total_views', graphs.views.data, graphs.views.layout);
+            Plotly.newPlot('unique_visitors', graphs.uniques.data, graphs.uniques.layout);
+        }
+    </script>
+</body>
+</html>
