@@ -16,7 +16,7 @@ To deploy this web application for your own use, you only need to make a few sim
 - **Repository Name**: Specify the repository you wish to track.
 - **Personal Access Token**: Enter your GitHub personal access token to authorize data retrieval. <br >
 
-Live Deployment Example: <br >
+## Live Deployment Example: <br >
 To see a demo, visit the following deployment: https://cellscopes.humphreyslab.com
 
 <img src="https://github.com/HaojiaWu/14days_and_more/blob/main/demo.png" width="1000"> <br>
