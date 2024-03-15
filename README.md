@@ -5,7 +5,7 @@ The GitHub traffic graph offers insights into visitor history, but it's limited 
 ## Key Features:
 
 - Long-Term Traffic Data Tracking: Keep a comprehensive history of your repository's traffic.
-- Automatic Data Retrieval: The app automatically fetches and updates your traffic data.
+- Automatic Data Retrieval: The app automatically fetches and updates your traffic data (e.g. set cron job to restart the app daily).
 - Simple Deployment: Built using Flask, this application can be easily deployed on your own web server.
 
 ## Getting Started:
